@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a class="logo_name"  href="/">Cry's Blog
+            <small>Do one thing at a time, and do well</small>
+            </a>
+        </div>
+    </div>
+    <ul class="blogs" id="blogList">
+        <% allContent.forEach(function(blog, index){ %>
+        <li class = 'each_blog'><a href='http://localhost:3000/blog/<%= blog.id %>' class="blog_title"><%= blog.title %></a></li>
+        <% }) %>
+    </ul>
+    <div class="footer"></div>
+</body>
+</html>

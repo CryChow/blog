@@ -1,0 +1,124 @@
+body {
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #1e2a31;
+    margin: 0;
+}
+*{
+    outline: none;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    padding: 40px 45px;
+}
+.logo{
+    float: left;
+}
+.logo_name{
+    color: #edeff0;
+    font-size: 24px;
+    text-decoration: none;
+}
+.logo_name small{
+    display: block;
+    font-size: 16px;
+    color: #8a9ba1;
+    margin-top: 5px;
+}
+
+
+/*///////////////blog////////////////*/
+.blogs{
+    list-style: none;
+    padding: 0 45px;
+    width: 70%;
+    margin: 0 auto;
+}
+.each_blog{
+    background-color: #2b3942;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: #c2cbce;
+    border-radius: 3px;
+}
+.blog_title{
+    color: #c2cbce;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+}
+.blog_title:hover{
+    color: #edeff0;
+}
+/*//////////////write/////////////////*/
+.write_blog{
+    width: 70%;
+    margin: 0 auto;
+}
+.write_title_ipt{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #2b3942;
+}
+.write_content_ipt{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: #2b3942;
+}
+.write_ipt:focus{
+     background-color: #edeff0;
+     transition: .5s;
+ }
+#blgSbmt{
+    margin-top: 10px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #2b3942;
+}
+#blgSbmt:hover{
+    color: #1e2a31;
+    background-color: #edeff0;
+    transition: .5s;
+}
+
+/*////////////////one_blog//////////////////*/
+
+.section{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #2b3942;
+    color: #b4bfc3;
+    border-radius: 3px;
+    padding: 40px 40px;
+}
+.section h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0px auto 30px auto;
+}
+.section div{
+    font-size: 16px;
+    color: #8a9ba1;
+    line-height: 145%;
+}
+
+
+
+
+
+
