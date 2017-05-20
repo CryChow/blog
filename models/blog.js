@@ -9,14 +9,16 @@ var BlogSchema = new Schema({
 
     title: String,
 	content: String,
+	time: String,
     isDel: Boolean
 });
 var BlogModel = mongodb.mongoose.model('Blog', BlogSchema);
 
-function Blog(title, content, isDel) {
+function Blog(title, content, time, isDel) {
 
 	this.title = title;
     this.content = content;
+	this.time = time;
     this.isDel = isDel;
 };
 
@@ -25,6 +27,7 @@ Blog.prototype.save = function(blog, callback) {
     var blog = {
     	title: blog.title,
         content: blog.content,
+	    time: blog.time,
         isDel: blog.isDel
     };
 

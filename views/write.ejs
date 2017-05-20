@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title><%= title %></title>
-    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="/javascripts/write.js" type="text/javascript"></script>
+
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <a class="logo_name"  href="/">Cry's Blog
+<header>
+    <div class="logo">
+        <a class="logo_name"  href="/">Cry's Blog
             <small>Do one thing at a time, and do well</small>
-            </a>
-        </div>
+        </a>
     </div>
-    <form action="" class="write_blog">
+    <div id="user">
+        <i class="iconfont icon-denglu"></i>
+
+        <a href="http://localhost:3000/login" id="loginBtn" class="a">登录</a>
+
+    </div>
+</header>
+    <form action="http://localhost:3000/diary" class="write_blog" id="writeForm" onsubmit="return checkSubmit()">
         <div>
             <input type="text" class="write_title_ipt write_ipt" id="title" placeholder="标题" />
         </div>
@@ -27,5 +32,7 @@
         </div>
     </form>
     <div class="footer"></div>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/javascripts/write.js" type="text/javascript"></script>
 </body>
 </html>
