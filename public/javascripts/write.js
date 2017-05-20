@@ -15,8 +15,8 @@ $(function () {
 			var now = new Date();
 			var time = now.getFullYear().toString() + "-" + now.getMonth().toString() + "-" + now.getDate().toString();
 			$.get('/write/submit',{
-				title: $('#title').val(),
-				content: $('#content').val(),
+				title: title,
+				content: content,
 				time: time
 			});
 		}
